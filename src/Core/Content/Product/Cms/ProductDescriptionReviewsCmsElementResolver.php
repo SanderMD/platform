@@ -104,7 +104,7 @@ class ProductDescriptionReviewsCmsElementResolver extends AbstractProductDetailC
         $criteria->setOffset($offset);
 
         $sorting = new FieldSorting('createdAt', 'DESC');
-        if ($request->get('sort', 'points') === 'points') {
+        if ($request->get('sort', 'createdAt') === 'points') {
             $sorting = new FieldSorting('points', 'DESC');
         }
 
