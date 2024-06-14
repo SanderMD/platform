@@ -18,6 +18,7 @@ class DeliveryTimeEntity extends Entity
     use EntityIdTrait;
     final public const DELIVERY_TIME_HOUR = 'hour';
     final public const DELIVERY_TIME_DAY = 'day';
+    final public const DELIVERY_TIME_WEEKDAY = 'weekday';
     final public const DELIVERY_TIME_WEEK = 'week';
     final public const DELIVERY_TIME_MONTH = 'month';
     final public const DELIVERY_TIME_YEAR = 'year';

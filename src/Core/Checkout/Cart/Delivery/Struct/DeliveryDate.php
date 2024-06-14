@@ -54,6 +54,10 @@ class DeliveryDate extends Struct
                 self::create('P' . $deliveryTime->getMin() . 'Y'),
                 self::create('P' . $deliveryTime->getMax() . 'Y')
             ),
+            DeliveryTimeEntity::DELIVERY_TIME_WEEKDAY => new self(
+                self::createFromDateString($deliveryTime->getMin() . ' weekday'),
+                self::createFromDateString($deliveryTime->getMax() . ' weekday'),
+            ),
             default => throw new \RuntimeException(sprintf('Not supported unit %s', $deliveryTime->getUnit())),
         };
     }
@@ -85,4 +89,10 @@ class DeliveryDate extends Struct
     {
         return (new \DateTime())->add(new \DateInterval($interval));
     }
+
+    private static function createFromDateString(string $dateString): \DateTime
+    {
+        return (new \DateTime())->add(\DateInterval::createFromDateString($dateString));
+    }
 }
+

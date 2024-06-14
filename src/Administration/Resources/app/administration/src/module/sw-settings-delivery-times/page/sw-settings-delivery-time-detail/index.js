@@ -64,6 +64,9 @@ export default {
                 value: 'day',
                 label: this.$tc('sw-settings-delivery-time.detail.selectionUnitDay'),
             }, {
+                value: 'weekday',
+                label: this.$tc('sw-settings-delivery-time.detail.selectionUnitWeekDay'),
+            }, {
                 value: 'week',
                 label: this.$tc('sw-settings-delivery-time.detail.selectionUnitWeek'),
             }, {
@@ -198,3 +201,4 @@ export default {
         },
     },
 };
+

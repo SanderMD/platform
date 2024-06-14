@@ -35,6 +35,7 @@
       "labelMax": "Maximum",
       "selectionUnitHour": "Hour",
       "selectionUnitDay": "Day",
+      "selectionUnitWeekDay": "Weekday",
       "selectionUnitWeek": "Week",
       "selectionUnitMonth": "Month",
       "selectionUnitYear": "Year",
